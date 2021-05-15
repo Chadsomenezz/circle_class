@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+        span{
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            cursor: pointer;
+        }
+        span[data-color='red']{
+            background-color: red;
+        }
+        span[data-color='green']{
+            background-color: green;
+        }
+        span[data-color='blue']{
+            background-color: blue;
+        }
+        .reset{
+            border: 1px solid black;
+            display: inline-block;
+            margin-left: 10px;
+            width: 100px;
+            height: 100px;
+            vertical-align: top;
+            padding: 30px 30px;
+            cursor: pointer;
+        }
+        .menu{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="menu">
+    <span class="colors" data-color="red"></span>
+    <span class="colors" data-color="green"></span>
+    <span class="colors" data-color="blue"></span>
+    <p class="reset">Reset</p>
+</div>
+<div class="container"></div>
+
+
+<script src="Circle.js">
+</script>
+</body>
+</html>
